@@ -24,8 +24,8 @@ public class Movie {
     private String movieName;
     private String genre;
     private String language;
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Cast> casts;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.PERSIST)
     private List<Award> awards;
 }
