@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @Builder
-@Entity(name="cast")
+@Entity(name="MovieCast")
 public class Cast {
     @Id
     @GeneratedValue
